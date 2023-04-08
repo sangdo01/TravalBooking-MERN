@@ -10,6 +10,7 @@ import Subtitle from './../shared/Subtitle';
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeatureTourList from '../components/Feature-tours/FeatureTourList';
+import experienceImg from '../assets/images/experience.png';
 
 const Home = () => {
   return <>
@@ -20,7 +21,7 @@ const Home = () => {
           <Col lg='6'>
             <div className="hero__content">
               <div className="hero__subtitle d-flex align-items-center ">
-                <Subtitle subtitle={'Know Before You Go'}/>
+                <Subtitle subtitle={'Know Before You Go'} />
                 <img src={worldImg} alt="" />
               </div>
               <h1>Traveling opens the door to creating <span className="highlight"> memories</span></h1>
@@ -66,10 +67,51 @@ const Home = () => {
             <Subtitle subtitle={"Explore"} />
             <h2 className="featured__tour-title">Our featured tour</h2>
           </Col>
-          <FeatureTourList/>
+          <FeatureTourList />
         </Row>
       </Container>
     </section>
+    { /*================= Feature section end ===================*/}
+
+    { /*================= Feature section end ===================*/}
+
+    <section>
+      <Container>
+        <Row>
+          <Col lg="6">
+            <div className="experience__content">
+              <Subtitle subtitle={"Experience"} />
+
+              <h2>
+                With you all experience <br /> we will serve you
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <br />
+                Quas aliman, hic temporia inventore suscipit unde.
+              </p>
+            </div>
+            <div className="counter__wrapper d-flex align-items-center gap-5">
+              <div className="counter__box">
+                <span>12k+</span>
+                <h6>Successful Trip</h6>
+              </div>
+              <div className="counter__box">
+                <span>2k+</span>
+                <h6>Regular clients</h6>
+              </div>
+              <div className="counter__box">
+                <span>15</span>
+                <h6>Year experience</h6>
+              </div>
+            </div>
+          </Col>
+          <Col lg="6">
+            <div className="experience__img"><img src={experienceImg} alt="" /></div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
     { /*================= Feature section end ===================*/}
   </>
 }
