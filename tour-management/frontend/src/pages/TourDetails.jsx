@@ -43,7 +43,7 @@ const TourDetails = () => {
                 <h2>{title}</h2>
                 <div className="d-flex align-items-center gap-5">
                   <span className="tour__rating d-flex align-items-center gap-1">
-                    <i class="ri-star-fill" style={{ 'color': 'var(--secondary-color)' }}></i> {calculateAvgRating === 0 ? null : avgRating}
+                    <i class="ri-star-fill" style={{ 'color': 'var(--secondary-color)' }}></i> {avgRating === 0 ? null : avgRating}
                     {totalRating === 0 ? (
                       "Not rated"
                     ) : (

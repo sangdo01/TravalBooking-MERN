@@ -26,7 +26,7 @@ const Booking = ({ tour, avgRating }) => {
      const totalAmount =Number(price) * Number(credentials.guestSize) + Number(serviceFee)
 
     const handleClick = e => {
-        e.preventDefault()
+        e.preventDefault();
         navigate('/thank-you');
     } 
 
@@ -34,7 +34,7 @@ const Booking = ({ tour, avgRating }) => {
         <div className="booking__top d-flex align-items-center justify-content-between">
             <h3>${price} <span>/per person</span></h3>
             <span className="tour__rating d-flex align-items-center">
-                <i class="ri-star-fill" ></i> {avgRating === 0 ? null : avgRating} ({reviews?.lenght})
+                <i class="ri-star-fill" ></i> {avgRating === 0 ? null : avgRating} ({reviews?.length})
             </span>
         </div>
         {/*=========================== Booking form start ========================================*/}
@@ -80,7 +80,7 @@ const Booking = ({ tour, avgRating }) => {
                     <span> ${totalAmount}</span>
                 </ListGroupItem>
             </ListGroup>
-            <Button className="btn primary__btn w-100 mt-4" onSubmit={handleClick}>Book Now</Button>
+            <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>Book Now</Button>
         </div>
 
         {/*=========================== Booking bottom end ========================================*/}
