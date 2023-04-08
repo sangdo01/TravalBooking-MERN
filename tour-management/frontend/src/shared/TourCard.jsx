@@ -14,9 +14,7 @@ const TourCard = ({ tour }) => {
                     <img src={photo} alt="tour-img" />
                     {featured && <span>Featured</span>}
                 </div>
-            </Card>
-
-            <CardBody>
+                <CardBody>
                 <div className="card__top d-flex align-items-center justify-content-between">
                     <span className="tour__location d-flex align-items-center gap-1">
                         <i class="ri-map-pin-line"></i> {city}
@@ -28,7 +26,6 @@ const TourCard = ({ tour }) => {
                         ) : (
                             <span>({reviews.length})</span>
                         )}
-                        <span>({reviews.length})</span>
                     </span>
                 </div>
                 <h5 className="tour__title"><Link to={`/tours/${id}`}>{title}</ Link></h5>
@@ -39,6 +36,9 @@ const TourCard = ({ tour }) => {
                     </button>
                 </div>
             </CardBody>
+            </Card>
+
+            
         </div>
     )
 }
