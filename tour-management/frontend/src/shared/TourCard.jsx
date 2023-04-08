@@ -26,7 +26,6 @@ const TourCard = ({ tour }) => {
                         ) : (
                             <span>({reviews.length})</span>
                         )}
-                        <span>({reviews.length})</span>
                     </span>
                 </div>
                 <h5 className="tour__title"><Link to={`/tours/${id}`}>{title}</ Link></h5>
