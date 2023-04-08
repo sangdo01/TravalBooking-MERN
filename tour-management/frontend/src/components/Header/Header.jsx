@@ -20,7 +20,7 @@ const nav__links = [
 ]
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header sticky__header">
       <Container>
         <Row>
           <div className="nav__wrapper d-flex align-items-center justify-content-between">
@@ -48,12 +48,12 @@ const Header = () => {
 
             <div className="nav__right d-flex align-item-center gap-4">
               <div className="nav__btns d-flex align-item-center gap4 ">
-                <button className="btn secondary__btn">
+                <Button className="btn secondary__btn">
                   <Link to='/login'>Login</Link>
-                </button>
-                <button className="btn primary__btn">
+                </Button>
+                <Button className="btn primary__btn">
                   <Link to='/register'>Register</Link>
-                </button>
+                </Button>
               </div>
               <span className="mobile__menu">
                 <i class="ri-menu-line"></i>
