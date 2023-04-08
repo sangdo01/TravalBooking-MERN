@@ -12,9 +12,10 @@ const tours = [
     title: "Westminister Bridge",
     city: "London",
     distance: 300,
+    address: "London",
     price: 99,
     maxGroupSize: 10,
-    desc: "this is the description",
+    desc: "I like this place",
     reviews: [
       {
         name: "jhon doe",
@@ -30,14 +31,12 @@ const tours = [
     title: "Bali, Indonesia",
     city: "Indonesia",
     distance: 400,
+    address: "Indonesia",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "No Description",
     reviews: [
-      {
-        name: "jhon doe",
-        rating: 4.6,
-      },
+
     ],
     avgRating: 4.5,
     photo: tourImg02,
@@ -48,12 +47,13 @@ const tours = [
     title: "Snowy Mountains, Thailand",
     city: "Thailand",
     distance: 500,
+    address: "Thailand",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Amazing tournament",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Hoang Luan",
         rating: 4.6,
       },
     ],
@@ -66,12 +66,13 @@ const tours = [
     title: "Beautiful Sunrise, Thailand",
     city: "Thailand",
     distance: 500,
+    address: "Thailand",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "this country so beautiful",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Thanh Tam",
         rating: 4.6,
       },
     ],
@@ -84,9 +85,10 @@ const tours = [
     title: "Nusa Pendia Bali, Indonesia",
     city: "Indonesia",
     distance: 500,
+    address: "Indonesia",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "I Love this country",
     reviews: [
       {
         name: "jhon doe",
@@ -102,12 +104,13 @@ const tours = [
     title: "Cherry Blossoms Spring",
     city: "Japan",
     distance: 500,
+    address: "Japan",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Great place to go",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Batman",
         rating: 4.6,
       },
     ],
@@ -120,12 +123,13 @@ const tours = [
     title: "Holmen Lofoten",
     city: "France",
     distance: 500,
+    address: "France",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Great Place!!",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Minh Tai",
         rating: 4.6,
       },
     ],
@@ -138,12 +142,13 @@ const tours = [
     title: "Snowy Mountains, Thailand",
     city: "Thailand",
     distance: 500,
+    address: "Snowy Mountains, Thailand",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Cold Mountain Snow",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Dung",
         rating: 4.6,
       },
     ],
