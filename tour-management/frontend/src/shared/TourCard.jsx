@@ -14,9 +14,7 @@ const TourCard = ({ tour }) => {
                     <img src={photo} alt="tour-img" />
                     {featured && <span>Featured</span>}
                 </div>
-            </Card>
-
-            <CardBody>
+                <CardBody>
                 <div className="card__top d-flex align-items-center justify-content-between">
                     <span className="tour__location d-flex align-items-center gap-1">
                         <i class="ri-map-pin-line"></i> {city}
@@ -39,6 +37,9 @@ const TourCard = ({ tour }) => {
                     </button>
                 </div>
             </CardBody>
+            </Card>
+
+            
         </div>
     )
 }
