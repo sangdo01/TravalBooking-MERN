@@ -13,6 +13,7 @@ import FeatureTourList from '../components/Feature-tours/FeatureTourList';
 import experienceImg from '../assets/images/experience.png';
 import MasonryImageGallery from '../components/Image-gallery/MasonryImageGallery';
 import Testimonial from '../components/Testimonial/Testimonials';
+import Newsletter from '../shared/Newsletter';
 
 const Home = () => {
   return <>
@@ -153,7 +154,7 @@ const Home = () => {
     </section>
 
     { /*=================testimonial section end =================*/}
-
+    <Newsletter />
   </>
 }
 
