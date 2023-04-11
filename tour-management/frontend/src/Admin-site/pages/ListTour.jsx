@@ -1,12 +1,14 @@
 import React from "react";
-// import sellCar from "../../assets/images/sell-car.png";
 import "../styles/listtour.css";
-// import TrackingChart from "../charts/TrackingChart";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import tourData from "../../assets/data/tours";
 
-const SellCar = () => {
-  const percentage = 55;
-  const percentage02 = 45;
+const tour = tourData.find(tour => tour.id === id)
+const { id, title, city, distance, price } = tour;
+
+const ListTour = () => {
+  // const { id } = useParams();
+
+
   return (
     <div className="sell__car content">
       <div className="sell__car-wrapper">
@@ -29,108 +31,51 @@ const SellCar = () => {
           <div className="offer__list">
             <div className="offer__item">
               <div className="box__01">
-                <h3 className="client__name">Killian James</h3>
+                <h3 className="client__name">{title}</h3>
                 <h6 className="avg__price">
-                  $16,605 <span>average price</span>
+                  <i class="ri-map-pin-2-line"></i>{city}
                 </h6>
 
-                <h6 className="market__price">Market average is $16,244</h6>
-                <span className="arrow__key">
-                  <i class="ri-arrow-right-line"></i>
-                </span>
+                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>{distance}</h6>
               </div>
 
-              <div className="circle__wrapper">
-                <div className="box__02">
-                  <CircularProgressbar
-                    value={percentage}
-                    text={`${percentage}%`}
-                    styles={buildStyles({
-                      pathColor: "#01d293",
-                      textColor: "#fff",
-                      trailColor: "#0b0c28",
-                      textSize: "18px",
-                    })}
-                  />
-                </div>
-                <h4>Impression Share</h4>
+              <div className="box__02">
+                <span className="model__spend-icon">
+                  <i class="ri-group-line"></i>
+                </span>
+                <h6 className="spend__amount">13</h6>
+                <p className="spend__title">Total Person</p>
               </div>
 
               <div className="box__03">
                 <span className="model__spend-icon">
-                  <i class="ri-car-line"></i>
+                  <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
+                <h6 className="spend__amount">{price}</h6>
+                <p className="spend__title">Price</p>
               </div>
 
               <div className="box__04">
                 <span className="model__spend-icon">
-                  <i class="ri-share-forward-line"></i>
-                </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
-              </div>
-
-              <div className="box__05">
-                <span className="model__spend-icon">
                   <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">$811</h6>
-                <p className="spend__title">Spend Per Unit Turned</p>
-              </div>
-            </div>
-            <div className="offer__item">
-              <div className="box__01">
-                <h3 className="client__name">Jhon Doe</h3>
-                <h6 className="avg__price">
-                  $11,605 <span>average price</span>
-                </h6>
+                <h6 className="spend__amount">$998</h6>
+                <p className="spend__title">Toltal Price</p>
 
-                <h6 className="market__price">Market average is $11,244</h6>
-                <span className="arrow__key">
-                  <i class="ri-arrow-right-line"></i>
-                </span>
               </div>
-
-              <div className="circle__wrapper">
-                <div className="box__02">
-                  <CircularProgressbar
-                    value={percentage02}
-                    text={`${percentage02}%`}
-                    styles={buildStyles({
-                      pathColor: "#01d293",
-                      textColor: "#fff",
-                      trailColor: "#0b0c28",
-                      textSize: "18px",
-                    })}
-                  />
+              <div className="box__05">
+                <div className="edit__btn">
+                  <span className="dlt__btn">
+                    <button className="dlt__btn"><i class="ri-pencil-line"></i>Edit</button>
+                  </span>
                 </div>
-                <h4>Impression Share</h4>
-              </div>
+                <div className="edit__btn">
 
-              <div className="box__03">
-                <span className="model__spend-icon">
-                  <i class="ri-car-line"></i>
-                </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
-              </div>
+                  <span className="update__btn">
+                    <button className="dlt__btn"><i class="ri-delete-back-2-line"></i>Delete</button>
+                  </span>
+                </div>
 
-              <div className="box__04">
-                <span className="model__spend-icon">
-                  <i class="ri-share-forward-line"></i>
-                </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
-              </div>
-
-              <div className="box__05">
-                <span className="model__spend-icon">
-                  <i class="ri-money-dollar-circle-line"></i>
-                </span>
-                <h6 className="spend__amount">$811</h6>
-                <p className="spend__title">Spend Per Unit Turned</p>
               </div>
             </div>
           </div>
@@ -140,4 +85,4 @@ const SellCar = () => {
   );
 };
 
-export default SellCar;
+export default ListTour;
