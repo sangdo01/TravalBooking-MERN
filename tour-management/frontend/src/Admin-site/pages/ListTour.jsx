@@ -1,17 +1,11 @@
 import React from "react";
 import "../styles/listtour.css";
-import tourData from "../../assets/data/tours";
+// import TrackingChart from "../charts/TrackingChart";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 
-
-const ListTour = () => {
-  const tour = tourData.find(tour => tour.id === id)
-  const {id, title, city, distance, price } = tour;
-
-  
-
-
-
-
+const SellCar = () => {
+  const percentage = 55;
+  const percentage02 = 45;
   return (
     <div className="sell__car content">
       <div className="sell__car-wrapper">
@@ -39,7 +33,10 @@ const ListTour = () => {
                   <i class="ri-map-pin-2-line"></i>{city}
                 </h6>
 
-                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>{distance}k/m</h6>
+                <h6 className="market__price">Market average is $16,244</h6>
+                <span className="arrow__key">
+                  <i class="ri-arrow-right-line"></i>
+                </span>
               </div>
 
               <div className="box__02">
