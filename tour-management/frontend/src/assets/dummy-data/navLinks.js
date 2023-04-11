@@ -15,6 +15,11 @@ const navLinks = [
     display: "List Tour",
   },
   {
+    path: "/admin/manageraccount",
+    icon: "ri-account-circle-line",
+    display: "Manager account",
+  },
+  {
     path: "/admin/addTours",
     icon: "ri-add-line",
     display: "Add Tour",
