@@ -2,11 +2,14 @@ import React from "react";
 import "../styles/listtour.css";
 import tourData from "../../assets/data/tours";
 
-const tour = tourData.find(tour => tour.id === id)
-const { id, title, city, distance, price } = tour;
 
 const ListTour = () => {
-  // const { id } = useParams();
+  const tour = tourData.find(tour => tour.id === id)
+  const {id, title, city, distance, price } = tour;
+
+  
+
+
 
 
   return (
@@ -36,7 +39,7 @@ const ListTour = () => {
                   <i class="ri-map-pin-2-line"></i>{city}
                 </h6>
 
-                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>{distance}</h6>
+                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>{distance}k/m</h6>
               </div>
 
               <div className="box__02">
