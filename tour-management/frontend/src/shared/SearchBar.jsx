@@ -26,8 +26,6 @@ const Searchbar = () => {
         if(!res.ok) alert('Something wnet wrong');
 
         const result = await res.json();
-
-        //page chua co
         navigate(`/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,{ state: result.data });
 
     };
