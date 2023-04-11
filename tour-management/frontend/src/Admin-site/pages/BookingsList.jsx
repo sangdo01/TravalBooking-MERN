@@ -1,12 +1,7 @@
 import React from "react";
 import "../styles/bookingslist.css";
-
-// import carData from "../../assets/dummy-data/booking-cars.js";
-// import CarItem from "../UI/CarItem";
-// import sellCar from "../../assets/images/sell-car.png";
 import "../styles/listtour.css";
 import TrackingChart from "../charts/TrackingChart";
-// import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 
 const Bookings = () => {
   return (
@@ -35,76 +30,51 @@ const Bookings = () => {
           <div className="offer__list">
             <div className="offer__item">
               <div className="box__01">
-                <h3 className="client__name">Killian James</h3>
+                <h3 className="client__name">Westminister Bridge</h3>
                 <h6 className="avg__price">
-                  $16,605 <span>average price</span>
+                  <i class="ri-map-pin-2-line"></i>London
                 </h6>
 
-                <h6 className="market__price">Market average is $16,244</h6>
-                <span className="arrow__key">
-                  <i class="ri-arrow-right-line"></i>
+                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>300 k/m</h6>
+              </div>
+
+              <div className="box__02">
+                <span className="model__spend-icon">
+                  <i class="ri-group-line"></i>
                 </span>
+                <h6 className="spend__amount">13</h6>
+                <p className="spend__title">Total Person</p>
               </div>
 
               <div className="box__03">
                 <span className="model__spend-icon">
-                  <i class="ri-car-line"></i>
+                  <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
+                <h6 className="spend__amount">$22</h6>
+                <p className="spend__title">Price</p>
               </div>
 
               <div className="box__04">
                 <span className="model__spend-icon">
-                  <i class="ri-share-forward-line"></i>
-                </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
-              </div>
-
-              <div className="box__05">
-                <span className="model__spend-icon">
                   <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">$811</h6>
-                <p className="spend__title">Spend Per Unit Turned</p>
-              </div>
-            </div>
-            <div className="offer__item">
-              <div className="box__01">
-                <h3 className="client__name">Jhon Doe</h3>
-                <h6 className="avg__price">
-                  $11,605 <span>average price</span>
-                </h6>
+                <h6 className="spend__amount">$998</h6>
+                <p className="spend__title">Toltal Price</p>
 
-                <h6 className="market__price">Market average is $11,244</h6>
-                <span className="arrow__key">
-                  <i class="ri-arrow-right-line"></i>
-                </span>
               </div>
-
-              <div className="box__03">
-                <span className="model__spend-icon">
-                  <i class="ri-car-line"></i>
-                </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
-              </div>
-
-              <div className="box__04">
-                <span className="model__spend-icon">
-                  <i class="ri-share-forward-line"></i>
-                </span>
-                <h6 className="spend__amount">$1174</h6>
-                <p className="spend__title">Model Spend</p>
-              </div>
-
               <div className="box__05">
-                <span className="model__spend-icon">
-                  <i class="ri-money-dollar-circle-line"></i>
-                </span>
-                <h6 className="spend__amount">$811</h6>
-                <p className="spend__title">Spend Per Unit Turned</p>
+                <div className="edit__btn">
+                  <span className="dlt__btn">
+                    <button className="dlt__btn"><i class="ri-check-line"></i>Accept</button>
+                  </span>
+                </div>
+                <div className="edit__btn">
+
+                  <span className="update__btn">
+                    <button className="dlt__btn"><i class="ri-close-circle-line"></i>Refuse</button>
+                  </span>
+                </div>
+
               </div>
             </div>
           </div>

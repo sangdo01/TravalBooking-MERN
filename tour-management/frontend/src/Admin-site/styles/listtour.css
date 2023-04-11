@@ -58,13 +58,13 @@
 }
 
 .offer__item {
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   background: var(--ad-primary-color);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .box__01 .client__name {
@@ -72,6 +72,16 @@
   color: var(--ad-heading-color);
   margin-bottom: 10px;
   font-weight: 400;
+}
+
+.edit__btn {
+  display: flex;
+  margin-top: 20px;
+  justify-content:space-around;
+}
+
+.edit__btn i {
+  padding-right: 5px;
 }
 
 .avg__price {

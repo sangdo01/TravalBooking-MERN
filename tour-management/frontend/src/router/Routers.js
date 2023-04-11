@@ -8,11 +8,11 @@ import Login from './../pages/Login';
 import Register from './../pages/Register';
 import SearchResultList from './../pages/SearchResultList';
 import ThankYou from '../pages/ThankYou';
-// import Auth from '../authenticator/Auth';
 import Dashboard from "../Admin-site/pages/Dashboard"
 import BookingsList from "../Admin-site/pages/BookingsList";
 import ListTour from "../Admin-site/pages/ListTour";
 import AddTour from "../Admin-site/pages/AddTour";
+import Manageraccount from "../Admin-site/pages/ManagerAccount";
 
 const Routers = () => {
 
@@ -31,6 +31,7 @@ const Routers = () => {
       <Route path="/admin/bookingslist" element={<BookingsList />} />
       <Route path="/admin/listTour" element={<ListTour />} />
       <Route path="/admin/addTours" element={<AddTour />} />
+      <Route path="/admin/manageraccount" element={<Manageraccount />} />
     </Routes>
   )
 }
