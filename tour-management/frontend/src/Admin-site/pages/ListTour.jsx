@@ -1,11 +1,6 @@
 import React from "react";
 import "../styles/listtour.css";
-// import TrackingChart from "../charts/TrackingChart";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-
-const SellCar = () => {
-  const percentage = 55;
-  const percentage02 = 45;
+const ListTour = () => {
   return (
     <div className="sell__car content">
       <div className="sell__car-wrapper">
@@ -28,9 +23,9 @@ const SellCar = () => {
           <div className="offer__list">
             <div className="offer__item">
               <div className="box__01">
-                <h3 className="client__name">{title}</h3>
+                <h3 className="client__name">1</h3>
                 <h6 className="avg__price">
-                  <i class="ri-map-pin-2-line"></i>{city}
+                  <i class="ri-map-pin-2-line"></i>2
                 </h6>
 
                 <h6 className="market__price">Market average is $16,244</h6>
@@ -51,7 +46,7 @@ const SellCar = () => {
                 <span className="model__spend-icon">
                   <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">{price}</h6>
+                <h6 className="spend__amount">3</h6>
                 <p className="spend__title">Price</p>
               </div>
 

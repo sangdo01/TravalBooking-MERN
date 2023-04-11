@@ -33,32 +33,22 @@ const Bookings = () => {
                 <h5 className="client__name">Westminister Bridge</h5>
                 <h6 className="avg__price">
                   <i class="ri-map-pin-2-line"></i>London
-                  <i class="ri-map-pin-2-line"></i>London
                 </h6>
 
-                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>300 k/m</h6>
                 <h6 className="market__price"><i class="ri-map-pin-time-line"></i>300 k/m</h6>
               </div>
 
               <div className="box__02">
-              <div className="box__02">
                 <span className="model__spend-icon">
                   <i class="ri-group-line"></i>
-                  <i class="ri-group-line"></i>
                 </span>
-                <h6 className="spend__amount">13</h6>
-                <p className="spend__title">Total Person</p>
                 <h6 className="spend__amount">13</h6>
                 <p className="spend__title">Total Person</p>
               </div>
 
               <div className="box__03">
                 <span className="model__spend-icon">
-                  <i class="ri-money-dollar-circle-line"></i>
-                  <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">$22</h6>
-                <p className="spend__title">Price</p>
                 <h6 className="spend__amount">$22</h6>
                 <p className="spend__title">Price</p>
               </div>
@@ -66,28 +56,12 @@ const Bookings = () => {
               <div className="box__04">
                 <span className="model__spend-icon">
                   <i class="ri-money-dollar-circle-line"></i>
-                  <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">$998</h6>
-                <p className="spend__title">Toltal Price</p>
-
                 <h6 className="spend__amount">$998</h6>
                 <p className="spend__title">Toltal Price</p>
 
               </div>
               <div className="box__05">
-                <div className="edit__btn">
-                  <span className="dlt__btn">
-                    <button className="dlt__btn"><i class="ri-check-line"></i>Accept</button>
-                  </span>
-                </div>
-                <div className="edit__btn">
-
-                  <span className="update__btn">
-                    <button className="dlt__btn"><i class="ri-close-circle-line"></i>Refuse</button>
-                  </span>
-                </div>
-
                 <div className="edit__btn">
                   <span className="dlt__btn">
                     <button className="dlt__btn"><i class="ri-check-line"></i>Accept</button>
