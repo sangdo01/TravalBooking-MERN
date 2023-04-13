@@ -1,14 +1,6 @@
 import React from "react";
 import "../styles/listtour.css";
-import tourData from "../../assets/data/tours";
-
-const tour = tourData.find(tour => tour.id === id)
-const { id, title, city, distance, price } = tour;
-
 const ListTour = () => {
-  // const { id } = useParams();
-
-
   return (
     <div className="sell__car content">
       <div className="sell__car-wrapper">
@@ -31,12 +23,15 @@ const ListTour = () => {
           <div className="offer__list">
             <div className="offer__item">
               <div className="box__01">
-                <h3 className="client__name">{title}</h3>
+                <h3 className="client__name">1</h3>
                 <h6 className="avg__price">
-                  <i class="ri-map-pin-2-line"></i>{city}
+                  <i class="ri-map-pin-2-line"></i>2
                 </h6>
 
-                <h6 className="market__price"><i class="ri-map-pin-time-line"></i>{distance}</h6>
+                <h6 className="market__price">Market average is $16,244</h6>
+                <span className="arrow__key">
+                  <i class="ri-arrow-right-line"></i>
+                </span>
               </div>
 
               <div className="box__02">
@@ -51,7 +46,7 @@ const ListTour = () => {
                 <span className="model__spend-icon">
                   <i class="ri-money-dollar-circle-line"></i>
                 </span>
-                <h6 className="spend__amount">{price}</h6>
+                <h6 className="spend__amount">3</h6>
                 <p className="spend__title">Price</p>
               </div>
 

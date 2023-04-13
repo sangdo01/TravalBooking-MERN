@@ -11,7 +11,7 @@ const Layout = () => {
     const location = useLocation();
     return (<>
         {location.pathname.startsWith("/admin") ? <TopNav /> : <Header /> }
-        <div className='content'>
+        <div>
             <Routers />
         </div>
 

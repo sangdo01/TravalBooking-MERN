@@ -32,7 +32,7 @@
   padding: 20px;
   border-radius: 5px;
   background: var(--ad-primary-color);
-  height: 370px;
+  height: 200px;
   padding-bottom: 70px;
   cursor: pointer;
 }
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .offer__item {
@@ -68,7 +68,7 @@
 }
 
 .box__01 .client__name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--ad-heading-color);
   margin-bottom: 10px;
   font-weight: 400;

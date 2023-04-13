@@ -51,6 +51,7 @@
     z-index: 999;
 }
 
+/* make it responsive */
 
 @media only screen and (max-width: 992px){
     .logo img{

@@ -20,9 +20,9 @@ const Bookings = () => {
 
             <div className="filter__widget-01">
               <select>
-                <option value="toyota">Toyota</option>
-                <option value="bmw">Bmw</option>
-                <option value="audi">Audi</option>
+                <option value="toyota">Mien Bac</option>
+                <option value="bmw">Mien Nam</option>
+                <option value="audi">Mien trung</option>
               </select>
             </div>
           </div>
@@ -30,7 +30,7 @@ const Bookings = () => {
           <div className="offer__list">
             <div className="offer__item">
               <div className="box__01">
-                <h3 className="client__name">Westminister Bridge</h3>
+                <h5 className="client__name">Westminister Bridge</h5>
                 <h6 className="avg__price">
                   <i class="ri-map-pin-2-line"></i>London
                 </h6>
@@ -48,7 +48,6 @@ const Bookings = () => {
 
               <div className="box__03">
                 <span className="model__spend-icon">
-                  <i class="ri-money-dollar-circle-line"></i>
                 </span>
                 <h6 className="spend__amount">$22</h6>
                 <p className="spend__title">Price</p>
