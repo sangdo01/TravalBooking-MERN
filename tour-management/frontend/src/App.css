@@ -4,8 +4,20 @@
 :root {
   --primary-color: #ff7e01;
   --secondary-color: #faa935;
+  --ad-primary-color: #181b3a;
+  --ad-secondary-color: #01d293;
+  --ad-heading-color: #fff;
   --heading-color: #0b2727;
   --text-color: #6e7074;
+  --body-bg: #0b0c28;
+  --card-01-bg: linear-gradient(#ef621c, #e1424e);
+  --card-02-bg: linear-gradient(#01d293, #56c57a);
+  --card-03-bg: #725cff;
+  --card-04-bg: #2884ff;
+  --small-text-color: #808191;
+  --recommend-car01-bg: #e1dfa4;
+  --recommend-car02-bg: #e3ecf1;
+  --recommend-car03-bg: #f4e3e5;
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
 }
